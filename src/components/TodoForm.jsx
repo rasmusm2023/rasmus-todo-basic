@@ -1,5 +1,9 @@
 import { useState } from "react";
 
+//* Hur en ny uppgift skapas.Här i TodoForm har jag ett lokalt state som heter newTitle,
+// som lagrar det användaren skriver i fältet. När formuläret skickas körs handleSubmit.
+// Först anropar jag e.preventDefault() så att sidan inte laddas om. Sedan trimmar jag texten och
+// avbryter om den är tom, så att man inte kan lägga till tomma uppgifter.*//
 function TodoForm({ onAdd }) {
   const [newTitle, setNewTitle] = useState("");
 
@@ -8,6 +12,8 @@ function TodoForm({ onAdd }) {
     const title = newTitle.trim();
     if (!title) return;
 
+    //* Sedan anropar jag onAdd med titeln. onAdd är en prop, och den är i själva verket
+    //  funktionen handleAddTodo från App.*//
     onAdd(title);
     setNewTitle("");
   }
