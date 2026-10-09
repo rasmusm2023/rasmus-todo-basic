@@ -39,3 +39,7 @@ När jag körde fast så tittade jag antingen på egen gammal kod för att förs
 Exempelvis så bad jag AI om designråd för att göra appen mer intressant, där jag då bad om en massa olika features. Jag fick tillbaka en snygg och häftig version av todo-appen men det hade varit svårt för mig att förklara och äga koden eftersom jag inte skrivit den själv, utan bara ägt prompts som lett fram till designen. Därav valde jag att klona ett nytt repo från en commit där jag ägt hela koden, och lämnade AI's design i ett eget repo.
 
 Jag hade också ett bekymmer med att line-through applicerades på både todo.title och "X" (alltså delete-knappen) eftersom det också var text som låg i <li>. Efter att ha testat att ändra om i koden och klasserna så frågade jag AI om hjälp att lösa det specifika problemet, och då skrev den att jag ska lägga todo.title i en helt egen <span> och applicera line-through på endast det elementet istället för på hela <li>.
+
+## Länk till inspelning
+
+https://funet-my.sharepoint.com/:v:/g/personal/3ggyhmu26_mattla_folkuniversitetet_nu/IQChFi7-4WM9Q67MTe7REzzJAVc79bhs7JI7d1Chet1hyug?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZO9BWp
