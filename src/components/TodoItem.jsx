@@ -1,6 +1,6 @@
 function TodoItem({ todo, onToggle, onDelete }) {
   return (
-    //*Tillbaka i TodoItem ser vi hur todo.done styr utseendet.
+    //* 6.Tillbaka i TodoItem ser vi hur todo.done styr utseendet.
     // Är den true blir bakgrunden grön och texten får line-through.
     // Gränssnittet styrs alltså helt av datan.*//
     <li
@@ -9,14 +9,14 @@ function TodoItem({ todo, onToggle, onDelete }) {
           ? "text-gray-400 bg-green-300"
           : "bg-sky-100 text-gray-700 hover:text-sky-600"
       }`}
-      //*Nästa funktion är att markera en uppgift som klar.
+      //* 4. Nästa funktion är att markera en uppgift som klar.
       // I TodoItem har hela <li>-elementet en onClick som anropar onToggle med uppgiftens id.*//
       onClick={() => onToggle(todo.id)}
     >
       <span className={todo.done ? "line-through" : ""}>{todo.title}</span>
       <button
         type="button"
-        //* Sista funktionen är att ta bort en uppgift. Knappen i TodoItem ligger inuti <li>,
+        //* 7. Sista funktionen är att ta bort en uppgift. Knappen i TodoItem ligger inuti <li>,
         // som redan har en onClick för att växla done. Därför anropar jag e.stopPropagation() här.
         // Utan den raden skulle ett klick på krysset också trigga växlingen på <li>.
         // Sedan anropar knappen onDelete med uppgiftens id.*//
